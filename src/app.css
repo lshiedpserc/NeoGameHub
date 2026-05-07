@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.glass-panel {
+		background-color: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	.neon-glow-blue {
+		box-shadow: 0 0 40px rgba(0, 219, 233, 0.15);
+	}
+	.neon-text-blue {
+		text-shadow: 0 0 10px rgba(0, 219, 233, 0.5);
+	}
+	.neon-glow-primary {
+		box-shadow: 0 0 40px -10px rgba(0, 219, 233, 0.15);
+	}
+	.neon-glow-primary:hover {
+		box-shadow: 0 0 60px -10px rgba(0, 219, 233, 0.25);
+	}
+	.neon-text-glow {
+		text-shadow: 0 0 10px rgba(0, 219, 233, 0.5);
+	}
+}
